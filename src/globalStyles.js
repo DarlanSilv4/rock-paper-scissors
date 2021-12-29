@@ -44,4 +44,17 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 80px;
+
+  @media only screen and (min-width: 1366px){
+    row-gap: 50px;
+  }
+
+`;
+
 export default GlobalStyle;
