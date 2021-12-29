@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -13,9 +13,11 @@ const GlobalStyle = createGlobalStyle`
     background-repeat: no-repeat;
     color:white;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    height: 100vh;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     padding: 25px;
-    width: 100vw;
+    width: 100%;
   }
 
   button {
