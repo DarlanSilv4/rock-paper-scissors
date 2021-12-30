@@ -6,13 +6,13 @@ export const ButtonContainer = styled.button`
   border-radius: 100%;
   box-shadow: ${({ theme }) => `0 5px ${theme.colors[2]}`};
   display: flex;
-  height: 120px;
+  height: 32vw;
   justify-content: center;
-  width: 120px;
+  width: 32vw;
 
   @media only screen and (min-width: 1024px){
-    height: 160px;
-    width: 160px;
+    height: 12vw;
+    width: 12vw;
   }
 
 `
@@ -23,16 +23,16 @@ export const ButtonIconBackground = styled.div`
   border-radius: 100%;
   box-shadow: inset 0 5px hsl(231, 23%, 78%);
   display: flex;
-  height: 90px;
+  height: 24vw;
   justify-content: center;
-  width: 90px;
+  width: 24vw;
 
   &>img{
     width: 50%;
   }
 
   @media only screen and (min-width: 1024px){
-    height: 120px;
-    width: 120px;
+    height: 9vw;
+    width: 9vw;
   }
 `

@@ -14,8 +14,8 @@ const GlobalStyle = createGlobalStyle`
     color:white;
     font-family: 'Barlow Semi Condensed', sans-serif;
     height: 100%;
-    min-width: 100vw;
     min-height: 100vh;
+    min-width: 100vw;
     padding: 25px;
     width: 100%;
   }
@@ -45,14 +45,15 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const Container = styled.div`
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  row-gap: 12vh;
   width: 100%;
-  row-gap: 80px;
 
-  @media only screen and (min-width: 1366px){
-    row-gap: 50px;
+  @media only screen and (min-width: 1024px){
+    justify-content: space-between;
+    row-gap: calc(100vh * 8 /100);
   }
 
 `;
