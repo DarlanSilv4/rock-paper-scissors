@@ -9,6 +9,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 12vh;
   padding: 2.6vw;
   width: 100%;
 
