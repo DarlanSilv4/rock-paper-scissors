@@ -18,6 +18,7 @@ export const HeaderContainer = styled.header`
     border-width: 0.2vw;
     height: 10vw;
     margin-top: 1.2vw;
+    margin-bottom: 0;
     padding: 5% 1%;
     width: 50%;
   }

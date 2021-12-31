@@ -25,6 +25,7 @@ export const ButtonsGridContainer = styled.div`
     background-size: 75%;
     column-gap: 6vw;
     height: 21vw;
+    margin-bottom: 0;
     row-gap: 2vw;
     width: 29vw;
   }
