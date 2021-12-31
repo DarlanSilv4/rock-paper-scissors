@@ -48,7 +48,6 @@ export const Container = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  row-gap: 12vh;
   width: 100%;
 
   @media only screen and (min-width: 1024px){
