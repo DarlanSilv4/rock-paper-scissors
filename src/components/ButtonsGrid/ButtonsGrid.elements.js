@@ -12,6 +12,7 @@ export const ButtonsGridContainer = styled.div`
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   justify-items: center;
+  margin-bottom: 15vh;
   row-gap: 5.5vw;
   width: 100%;
 
