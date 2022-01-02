@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonContainer, ButtonIconBackground } from "./Button.elements";
 
-export default function Button({ type }) {
+export default function Button({ type, size, disabled = false }) {
 
   const theme = {
     paper: { colors: ["hsl(230, 89%, 65%)", "hsl(230, 89%, 62%)", "hsl(229, 67%, 46%)"], url: "/images/icon-paper.svg" },
@@ -10,12 +10,10 @@ export default function Button({ type }) {
   }
 
   return (
-    <React.Fragment>
-      <ButtonContainer theme={theme[type]}>
-        <ButtonIconBackground theme={theme[type]}>
-          <img src={theme[type].url} alt="shape" />
-        </ButtonIconBackground>
-      </ButtonContainer>
-    </React.Fragment>
+    <ButtonContainer disabled={disabled} size={size} theme={theme[type]}>
+      <ButtonIconBackground theme={theme[type]}>
+        <img src={theme[type].url} alt="shape" />
+      </ButtonIconBackground>
+    </ButtonContainer>
   );
 }
