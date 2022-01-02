@@ -9,10 +9,14 @@ export const ButtonContainer = styled.button`
   height: 32vw;
   justify-content: center;
   width: 32vw;
+  
+  &:disabled{
+    cursor: default;
+  }
 
   @media only screen and (min-width: 1024px){
-    height: 12vw;
-    width: 12vw;
+    height:  ${({ size }) => size === 'big' ? '16vw' : '12vw'};
+    width: ${({ size }) => size === 'big' ? '16vw' : '12vw'};
   }
 
 `
@@ -32,7 +36,7 @@ export const ButtonIconBackground = styled.div`
   }
 
   @media only screen and (min-width: 1024px){
-    height: 9vw;
-    width: 9vw;
+    height:  75%;
+    width:  75%;
   }
 `
