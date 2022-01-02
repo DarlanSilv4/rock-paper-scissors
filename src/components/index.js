@@ -3,4 +3,5 @@ export { default as Scoreboard } from './Scoreboard/Scoreboard';
 export { default as ButtonsGrid } from './ButtonsGrid/ButtonsGrid'
 export { default as Button } from './Button/Button';
 export { default as RulesButton } from './RulesButton/RulesButton';
+export { default as RulesModal } from './RulesModal/RulesModal';
 export { default as ResultGrid } from './ResultGrid/ResultGrid';
