@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonContainer, ButtonIconBackground } from "./Button.elements";
 
-export default function Button({ type, size, disabled = false }) {
+export default function Button({ winner = false, type, size, disabled = false }) {
 
   const theme = {
     paper: { colors: ["hsl(230, 89%, 65%)", "hsl(230, 89%, 62%)", "hsl(229, 67%, 46%)"], url: "/images/icon-paper.svg" },
@@ -10,7 +10,7 @@ export default function Button({ type, size, disabled = false }) {
   }
 
   return (
-    <ButtonContainer disabled={disabled} size={size} theme={theme[type]}>
+    <ButtonContainer winner={winner} disabled={disabled} size={size} theme={theme[type]}>
       <ButtonIconBackground theme={theme[type]}>
         <img src={theme[type].url} alt="shape" />
       </ButtonIconBackground>
