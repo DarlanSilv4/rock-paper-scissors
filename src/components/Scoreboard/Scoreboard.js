@@ -1,9 +1,9 @@
-import { useState } from 'react';
 import { ScoreboardContainer, Score, ScoreText } from "./Scoreboard.elements";
+import { useGame } from "../../contexts/GameContext.js";
 
 export default function Scoreboard() {
 
-  const [score, setScore] = useState(12);
+  const { score } = useGame();
 
   return (
     <ScoreboardContainer>
