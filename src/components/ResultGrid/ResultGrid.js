@@ -1,22 +1,30 @@
 import { PickedContainer, PlayAgainButton, ResultContainer, ResultGridContainer, ResultText } from './ResultGrid.elements';
 import { Button } from "../../components";
+import { useGame } from "../../contexts/GameContext";
 
 export default function ResultGrid() {
+
+  const { result, playerChoice, cpuChoice, resetStates } = useGame();
+
+  const resultMessage = (result) => {
+    return result === "tie" ? "Draw Over" : `You ${result}`
+  }
+
   return (
     <ResultGridContainer>
       <PickedContainer>
-        <Button winner={true} disabled={true} size="big" type="paper" />
+        <Button winner={result === "win"} disabled={true} size="big" type={playerChoice} />
         <span>You Picked</span>
       </PickedContainer>
 
       <PickedContainer>
-        <Button disabled={true} size="big" type="rock" />
+        <Button winner={result === "lose"} disabled={true} size="big" type={cpuChoice} />
         <span>The House Picked</span>
       </PickedContainer>
 
       <ResultContainer>
-        <ResultText>You Win</ResultText>
-        <PlayAgainButton>Play Again</PlayAgainButton>
+        <ResultText>{resultMessage(result)}</ResultText>
+        <PlayAgainButton onClick={() => resetStates()}>Play Again</PlayAgainButton>
       </ResultContainer>
 
     </ResultGridContainer>
