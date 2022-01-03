@@ -49,8 +49,8 @@ export default function GameProvider(props) {
   }, [playerChoice]);
 
   useEffect(function changeScore() {
-    if (result !== outcomes.win) return;
-    setScore(score => score + 1);
+    if (result === outcomes.win) return setScore(score => score + 1);
+    if (result === outcomes.lose) return score !== 0 && setScore(score => score - 1)
   }, [result]);
 
 
