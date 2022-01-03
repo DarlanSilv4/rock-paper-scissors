@@ -9,9 +9,9 @@ export default function RulesModal() {
     <RulesModalBackground>
       <RulesModalContainer>
         <RulesModalTitle>Rules</RulesModalTitle>
-        <RulesImg src="/images/image-rules.svg" />
+        <RulesImg src="/images/image-rules.svg" alt="game rules" />
         <RulesModalExitButton onClick={() => showRules()}>
-          <img src="/images/icon-close.svg" />
+          <img src="/images/icon-close.svg" alt="close" />
         </RulesModalExitButton>
       </RulesModalContainer>
     </RulesModalBackground>
