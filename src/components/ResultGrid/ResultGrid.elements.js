@@ -14,6 +14,7 @@ export const ResultGridContainer = styled.div`
     align-items:center;
     display: flex;
     flex-direction: row-reverse;
+    gap: 4vw;
     justify-content:center;
     margin-top:3vw;
 
@@ -51,8 +52,8 @@ export const ResultContainer = styled.div`
 
   @media only screen and (min-width: 1024px){
     flex-direction: column-reverse;
-    width: 30%;
     gap: 1vw;
+    width: 20%;
   }
 `;
 
@@ -85,6 +86,6 @@ export const PlayAgainButton = styled.button`
     letter-spacing: 2px;
     font-weight: 600;
     font-size: 1vw;
-    width: 50%;
+    width: 80%;
   }
 `;

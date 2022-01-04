@@ -9,6 +9,8 @@ export default function GameProvider(props) {
   const [result, setResult] = useState(null);
   const [score, setScore] = useState(0);
 
+  const [loading, setLoading] = useState(false);
+
   const [isRulesModalDisplayed, setIsRulesModalDisplayed] = useState(false);
 
   const outcomes = { win: "win", lose: "lose", tie: "tie" };
@@ -45,6 +47,7 @@ export default function GameProvider(props) {
 
     const result = match(playerChoice, cpuChoice);
     setResult(result);
+    setLoading(true);
 
   }, [playerChoice]);
 
@@ -67,7 +70,9 @@ export default function GameProvider(props) {
         score,
         resetStates,
         showRules,
-        isRulesModalDisplayed
+        isRulesModalDisplayed,
+        loading,
+        setLoading
       }}>
       {props.children}
     </GameContext.Provider>
