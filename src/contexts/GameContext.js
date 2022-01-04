@@ -54,7 +54,7 @@ export default function GameProvider(props) {
 
   useEffect(function changeScore() {
     if (result === outcomes.win) return setScore(score => score + 1);
-    if (result === outcomes.lose) return score !== 0 && setScore(score => score - 1)
+    if (result === outcomes.lose) setScore(score => { return score > 0 ? score - 1 : 0 })
   }, [result]);
 
 
