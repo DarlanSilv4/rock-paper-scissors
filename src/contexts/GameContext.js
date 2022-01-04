@@ -42,6 +42,7 @@ export default function GameProvider(props) {
           return paperVersus[cpuChoice];
         case "rock":
           return rockVersus[cpuChoice];
+        default: break;
       }
     }
 
