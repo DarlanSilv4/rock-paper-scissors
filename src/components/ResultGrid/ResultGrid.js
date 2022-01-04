@@ -34,7 +34,7 @@ export default function ResultGrid() {
   }, [result, cpuChoice, setLoading]);
 
   const resultMessage = (result) => {
-    return result === "tie" ? "Draw Over" : `You ${result}`
+    return result === "tie" ? "Draw" : `You ${result}`
   }
 
   return (
