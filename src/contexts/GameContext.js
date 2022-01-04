@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export const GameContext = React.createContext({});
 
@@ -13,7 +13,7 @@ export default function GameProvider(props) {
 
   const [isRulesModalDisplayed, setIsRulesModalDisplayed] = useState(false);
 
-  const outcomes = { win: "win", lose: "lose", tie: "tie" };
+  const outcomes = useRef({ win: "win", lose: "lose", tie: "tie" });
 
   const resetStates = () => {
     setPlayerChoice(null);
@@ -31,9 +31,9 @@ export default function GameProvider(props) {
     setCpuChoice(cpuChoice);
 
     const match = (playerChoice, cpuChoice) => {
-      const scissorsVersus = { "paper": outcomes.win, "rock": outcomes.lose, "scissors": outcomes.tie };
-      const paperVersus = { "paper": outcomes.tie, "rock": outcomes.win, "scissors": outcomes.lose };
-      const rockVersus = { "paper": outcomes.lose, "rock": outcomes.tie, "scissors": outcomes.win };
+      const scissorsVersus = { "paper": outcomes.current.win, "rock": outcomes.current.lose, "scissors": outcomes.current.tie };
+      const paperVersus = { "paper": outcomes.current.tie, "rock": outcomes.current.win, "scissors": outcomes.current.lose };
+      const rockVersus = { "paper": outcomes.current.lose, "rock": outcomes.current.tie, "scissors": outcomes.current.win };
 
       switch (playerChoice) {
         case "scissors":
@@ -53,8 +53,8 @@ export default function GameProvider(props) {
   }, [playerChoice]);
 
   useEffect(function changeScore() {
-    if (result === outcomes.win) return setScore(score => score + 1);
-    if (result === outcomes.lose) setScore(score => { return score > 0 ? score - 1 : 0 })
+    if (result === outcomes.current.win) return setScore(score => score + 1);
+    if (result === outcomes.current.lose) setScore(score => { return score > 0 ? score - 1 : 0 })
   }, [result]);
 
 
