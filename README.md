@@ -2,6 +2,14 @@
 
 This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH).
 
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/DarlanSilv4/rock-paper-scissors.svg">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/DarlanSilv4/rock-paper-scissors.svg">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/DarlanSilv4/rock-paper-scissors.svg">
+  <a href="https://github.com/DarlanSilv4/rock-paper-scissors/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/DarlanSilv4/rock-paper-scissors.svg">
+  </a>
+</p>
+
 ## Table of contents
 
 - [Frontend Mentor - Rock, Paper, Scissors solution](#frontend-mentor---rock-paper-scissors-solution)
@@ -40,7 +48,7 @@ Users should be able to:
 ### Links
 
 - Solution: [Frontend Mentor Solution](https://your-solution-url.com)
-- Live Site: [Add live site URL here](https://your-live-site-url.com)
+- Live Site: [Vercel](https://rock-paper-scissors-nine-blush.vercel.app/)
 
 ## My process
 
