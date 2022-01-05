@@ -6,7 +6,7 @@ export default function Scoreboard() {
 
   const { score, loading } = useGame();
 
-  const [updatedScore, setUpdatedScore] = useState(score);
+  const [updatedScore, setUpdatedScore] = useState(0);
 
   useEffect(function updateScore() {
     if (!loading) setUpdatedScore(score);
