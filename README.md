@@ -2,6 +2,7 @@
 
 This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH).
 
+<p>
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/DarlanSilv4/rock-paper-scissors.svg">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/DarlanSilv4/rock-paper-scissors.svg">
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/DarlanSilv4/rock-paper-scissors.svg">
