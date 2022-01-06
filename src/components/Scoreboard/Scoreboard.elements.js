@@ -13,8 +13,8 @@ export const ScoreboardContainer = styled.div`
 
   @media only screen and (min-width: 1024px){
     border-radius: 0.7vw;
-    width: 10vw;
-    height: 7.5vw;
+    width: 22vh;
+    height: 17vh;
   }
 
 `;
@@ -26,7 +26,7 @@ export const ScoreText = styled.span`
   text-transform: uppercase;
 
   @media only screen and (min-width: 1024px){
-    font-size: 1.2vw;
+    font-size: 2.7vh;
   }
 
 `
@@ -38,6 +38,6 @@ export const Score = styled.span`
   line-height: 1;
 
   @media only screen and (min-width: 1024px){
-    font-size: 4.5vw;
+    font-size: 9.5vh;
   }
 `

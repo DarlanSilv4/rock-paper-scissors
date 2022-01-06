@@ -16,11 +16,11 @@ export const HeaderContainer = styled.header`
   @media only screen and (min-width: 1024px) {
     border-radius: 1vw;
     border-width: 0.2vw;
-    height: 10vw;
+    height: 23vh;
     margin-top: 1.2vw;
     margin-bottom: 0;
-    padding: 5% 1%;
-    width: 50%;
+    padding: 5% 2%;
+    width: 100vh;
   }
 `
 

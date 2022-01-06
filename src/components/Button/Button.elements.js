@@ -30,8 +30,8 @@ export const ButtonContainer = styled.button`
   }
 
   @media only screen and (min-width: 1024px){
-    height:  ${({ size }) => size === 'big' ? '16vw' : '12vw'};
-    width: ${({ size }) => size === 'big' ? '16vw' : '12vw'};
+    height:  ${({ size }) => size === 'big' ? '36vh' : '26vh'};
+    width: ${({ size }) => size === 'big' ? '36vh' : '26vh'};
   }
 
 `
