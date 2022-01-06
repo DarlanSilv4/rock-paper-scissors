@@ -1,7 +1,7 @@
 import { PickedContainer, PlayAgainButton, ResultContainer, ResultGridContainer, ResultText } from './ResultGrid.elements';
 import { Button } from "../../components";
 import { useGame } from "../../contexts/GameContext";
-import { useEffect, useState } from 'react/cjs/react.development';
+import { useEffect, useState } from 'react';
 
 export default function ResultGrid() {
 
